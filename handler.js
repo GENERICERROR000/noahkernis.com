@@ -24,11 +24,11 @@ module.exports.noahkernisDOTcom = (event, context, callback) => {
     <body>
       <h1>OH HEY THERE...!</h1>
       <h4>
-        So this is my site. I's really not much right now...
+        So this is my site. It's really not much right now...
       <h/h4>
 
       <h4>
-        But - it's being served by a "serverless function" - so that's what the kids call cool.
+        But it's being served by a "serverless function" - so that's what the kids call - cool.
       <h/h4>
 
       <h4>
