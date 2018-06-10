@@ -47,12 +47,11 @@ module.exports.noahkernisDOTcom = (event, context, callback) => {
       $(document).ready(function() {
         var refresh;
         // Duration count in seconds
-        const duration = 1000 * 10;
+        const duration = 1000 * 5;
         // Giphy API defaults
         const giphy = {
           baseURL: "https://api.giphy.com/v1/gifs/",
           key: "dc6zaTOxFJmzC",
-          tag: "fail",
           type: "random",
           rating: "pg"
         };
