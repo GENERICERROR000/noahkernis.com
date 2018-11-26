@@ -7,7 +7,6 @@ import Carl from './pages/carl.js'
 // Router
 export default () => {
   const childProps = {}
-
   return (
     <Switch>
       <Route path="/" exact component={Index} props={childProps} />

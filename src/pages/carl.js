@@ -1,66 +1,78 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
-    textAlign: 'center',
-    paddingTop: theme.spacing.unit * 20,
+    paddingLeft: theme.spacing.unit * 1.2,
   },
+  a: {
+    color: 'inherit',
+    textDecoration: 'none',
+    '&:hover': {
+      textDecoration: 'underline'
+    },
+    marginRight: theme.spacing.unit
+  },
+  logo: {
+    color: 'inherit',
+    textDecoration: 'none'
+  }
 });
 
 class Index extends React.Component {
-  state = {
-    open: false,
-  };
-
-  handleClose = () => {
-    this.setState({
-      open: false,
-    });
-  };
-
-  handleClick = () => {
-    this.setState({
-      open: true,
-    });
-  };
-
   render() {
     const { classes } = this.props;
-    const { open } = this.state;
 
     return (
-      <div className={classes.root}>
-        <Dialog open={open} onClose={this.handleClose}>
-          <DialogTitle>Super Secret Password</DialogTitle>
-          <DialogContent>
-            <DialogContentText>1-2-3-4-5</DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <Button color="primary" onClick={this.handleClose}>
-              OK
-            </Button>
-          </DialogActions>
-        </Dialog>
-        <Typography variant="h4" gutterBottom>
-          CARL
-        </Typography>
-        <Typography variant="subtitle1" gutterBottom>
-          example project
-        </Typography>
-        <Button variant="contained" color="secondary" onClick={this.handleClick}>
-          Super Secret Password
-        </Button>
-      </div>
+      // <div className={classes.root}>
+      <Grid container className={classes.root}>
+        <Grid item xs={12}>
+          <Grid
+            container
+            direction="row"
+            justify="flex-start"
+            alignItems="flex-start"
+          >
+            <Typography component="a" variant="h2" gutterBottom href="/" className={classes.logo}>
+              CARL
+            </Typography>
+          </Grid>
+          <Grid
+            container
+            direction="row"
+            justify="flex-start"
+            alignItems="flex-start"
+          >
+            <Grid key="1" item>
+              <Typography component="a" variant="h5" gutterBottom href="/carl" className={classes.a}>
+                Code
+              </Typography>
+            </Grid>
+            <Grid key="2" item>
+              <Typography component="a" variant="h5" gutterBottom href="/draw" className={classes.a}>
+                Draw
+              </Typography>
+            </Grid>
+            <Grid key="3" item>
+              <Typography component="a" variant="h5" gutterBottom href="/write" className={classes.a}>
+                Write
+              </Typography>
+            </Grid>
+            <Grid key="4" item>
+              <Typography component="a" variant="h5" gutterBottom href="/generic_error" className={classes.a}>
+                Generic_Error
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      // </div>
     );
   }
 }
