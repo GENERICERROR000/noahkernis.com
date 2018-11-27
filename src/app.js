@@ -6,7 +6,6 @@ import NavBar from './navbar.js'
 
 class App extends React.Component {
   render() {
-    const { classes } = this.props;
 
     return (
       <React.Fragment>
@@ -17,8 +16,8 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+// App.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
 export default App;

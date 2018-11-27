@@ -6,7 +6,6 @@ const styles = theme => ({});
 
 class Home extends React.Component {
   render() {
-    const { classes } = this.props;
 
     return (
       <div>
@@ -16,8 +15,8 @@ class Home extends React.Component {
   }
 }
 
-Home.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+// Home.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
 export default withStyles(styles)(Home)

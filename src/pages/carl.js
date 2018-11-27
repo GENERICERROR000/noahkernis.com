@@ -6,7 +6,6 @@ const styles = theme => ({});
 
 class Carl extends React.Component {
   render() {
-    const { classes } = this.props;
 
     return (
       <div>
@@ -16,8 +15,8 @@ class Carl extends React.Component {
   }
 }
 
-Carl.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+// Carl.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
 export default withStyles(styles)(Carl)
