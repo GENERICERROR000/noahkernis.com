@@ -4,19 +4,19 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({});
 
-class Home extends React.Component {
+class GenericError extends React.Component {
   render() {
 
     return (
       <div>
-        "HOME"
+        "GENERIC ERROR"
       </div>
     );
   }
 }
 
-// Home.propTypes = {
+// GenericError.propTypes = {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default withStyles(styles)(Home)
+export default withStyles(styles)(GenericError)

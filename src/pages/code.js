@@ -4,19 +4,19 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({});
 
-class Carl extends React.Component {
+class Code extends React.Component {
   render() {
 
     return (
       <div>
-        "CARL"
+        "CODE"
       </div>
     );
   }
 }
 
-// Carl.propTypes = {
+// Code.propTypes = {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default withStyles(styles)(Carl)
+export default withStyles(styles)(Code)
