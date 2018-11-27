@@ -10,6 +10,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <NavBar />
+        <hr />
         <AppRoutes />
       </React.Fragment>
     );

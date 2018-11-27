@@ -16,7 +16,8 @@ const styles = theme => ({
       color: '#ffffff',
       backgroundColor: '#000000'
     },
-    marginRight: theme.spacing.unit
+    marginRight: theme.spacing.unit * 2.0,
+    marginBottom: theme.spacing.unit * 4.0
   },
   logo: {
     color: 'inherit',
