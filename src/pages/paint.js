@@ -4,19 +4,19 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({});
 
-class Audio extends React.Component {
+class Paint extends React.Component {
   render() {
 
     return (
       <div>
-        "AUDIO"
+        "PAINT"
       </div>
     );
   }
 }
 
-// Audio.propTypes = {
+// Paint.propTypes = {
 //   classes: PropTypes.object.isRequired,
 // };
 
-export default withStyles(styles)(Audio)
+export default withStyles(styles)(Paint)

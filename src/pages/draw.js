@@ -2,10 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-// import ImageZoom from 'react-medium-image-zoom'
+import withRoot from '../withRoot';
 import AsyncComponent from '../components/asyncComponent.js'
 
-const styles = theme => ({});
+const styles = theme => ({
+  root: {
+    paddingLeft: theme.spacing.unit * 1.2
+  },
+  headers: {
+    marginTop: theme.spacing.unit * 1.2,
+    marginBottom: theme.spacing.unit * 1.2
+  }
+})
 
 class Draw extends React.Component {
   state = {
@@ -64,12 +72,14 @@ class Draw extends React.Component {
   render() {
     const { classes } = this.props
     return (
-      <div>
-        <Typography variant="h4" className={classes.a}>
-          Draw
+      <div className={classes.root}>
+        <Typography variant="h6" className={classes.headers}>
+          Portraits
         </Typography>
-
         { this.returnImages() }
+        <Typography variant="h6" className={classes.headers}>
+          Miscellaneous
+        </Typography>
       </div>
     );
   }
@@ -79,4 +89,4 @@ Draw.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Draw)
+export default withRoot(withStyles(styles)(Draw))
