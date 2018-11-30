@@ -17,12 +17,8 @@ const styles = theme => ({
       backgroundColor: '#000000'
     },
     marginRight: theme.spacing.unit * 2.0,
-    marginBottom: theme.spacing.unit * 4.0
+    marginBottom: theme.spacing.unit * 2.0
   },
-  logo: {
-    color: 'inherit',
-    textDecoration: 'none'
-  }
 });
 
 class NavBar extends React.Component {
@@ -63,7 +59,7 @@ class NavBar extends React.Component {
             justify="flex-start"
             alignItems="flex-start"
           >
-            <Typography component="a" variant="h2" gutterBottom href="/" className={classes.logo}>
+            <Typography component="a" variant="h2" gutterBottom href="/" className={classes.a}>
               Noah Kernis
             </Typography>
           </Grid>

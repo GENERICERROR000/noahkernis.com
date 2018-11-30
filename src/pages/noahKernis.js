@@ -9,7 +9,7 @@ class NoahKernis extends React.Component {
 
     return (
       <div>
-        "NOAH KERNIS"
+        "So basically this will give a little intro and then send them through site."
       </div>
     );
   }

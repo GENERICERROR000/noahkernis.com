@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ImageZoom from 'react-medium-image-zoom'
 
+// TODO
+// 1 - Array of objects with image info (alt, src)
+// 2 - Create and import an Async component piece using Progress indicator
+
 const styles = theme => ({});
 
 class Draw extends React.Component {
@@ -16,7 +20,6 @@ class Draw extends React.Component {
           image={{
             src: 'https://scontent-lga3-1.cdninstagram.com/vp/fbd910a6c95b5bb2ab9955bf7647708f/5CA91832/t51.2885-15/sh0.08/e35/s640x640/44575363_2485305361511095_4925126045707578033_n.jpg',
             alt: 'Protector OF What - 640w',
-            className: 'img',
             style: { width: '10em' }
           }}
           zoomImage={{
