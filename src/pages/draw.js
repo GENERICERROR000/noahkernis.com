@@ -1,41 +1,95 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import ImageZoom from 'react-medium-image-zoom'
 
 // TODO
-// 1 - Array of objects with image info (alt, src)
-// 2 - Create and import an Async component piece using Progress indicator
+// 1 - Create and import an Async component piece using Progress indicator
 
 const styles = theme => ({});
 
 class Draw extends React.Component {
-  render() {
+  state = {
+    baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/draw/',
+    images: [
+      'a_person_2018.jpeg',
+      'a_person_cant_ever_be_broken_2018.jpeg',
+      'all_or_none_2018.jpeg',
+      'another_day_2018.jpeg',
+      'bleed_love_2018.jpeg',
+      'evil_2018.jpeg',
+      'finally_got_that_itch_2018.jpeg',
+      'forgetting_your_keys_2018.jpeg',
+      'i_did_not_mean_to_say_that_2018.jpeg',
+      'i_exist_2018.jpeg',
+      'i_just_had_it_2018.jpeg',
+      'i_like_your_chair_2018.jpeg',
+      'i_made_the_cape_too_big_2018.jpeg',
+      'im_here_2018.jpeg',
+      'inside_out_2018.jpeg',
+      'its_hard_to_say_2018.jpeg',
+      'keeping_it_cool_2018.jpeg',
+      'none_of_this_makes_sense_2018.jpeg',
+      'pair_is_a_story_2018.jpeg',
+      'protector_of_what_2018.jpeg',
+      'ready_2018.jpeg',
+      'remember_2018.jpeg',
+      'singular_power_will_kill_us_all_2018.jpeg',
+      'still_counts_2018.jpeg',
+      'still_got_it_2018.jpeg',
+      'there_never_was_a_reality_2018.jpeg',
+      'this_wont_end_well_2018.jpeg',
+      'thought_and_emotion_2018.jpeg',
+      'what_day_is_it_2018.jpeg',
+      'what_was_that_2018.jpeg',
+      'when_confidence_wanes_2018.jpeg',
+      'when_do_we_get_to_dance_2018.jpeg',
+      'where_can_I_2018.jpeg'
+    ]
+  }
 
+  returnImages = () => {
+    const { baseURL, images } = this.state
+
+    return images.map((imageName, i) => {
+      return (
+        <React.Fragment >
+          {i}
+          <ImageZoom
+            key={i}
+            image={{
+              src: baseURL + imageName,
+              alt: imageName,
+              style: { width: '10em' }
+            }}
+            zoomImage={{
+              src: baseURL + imageName,
+              alt: imageName,
+            }}
+          />
+        </React.Fragment>
+      )
+    })
+  }
+
+
+  render() {
+    const { classes } = this.props
     return (
       <div>
-      <p>"DRAW"</p>
+        <Typography variant="h4" className={classes.a}>
+          Draw
+        </Typography>
 
-        <ImageZoom
-          image={{
-            src: 'https://scontent-lga3-1.cdninstagram.com/vp/fbd910a6c95b5bb2ab9955bf7647708f/5CA91832/t51.2885-15/sh0.08/e35/s640x640/44575363_2485305361511095_4925126045707578033_n.jpg',
-            alt: 'Protector OF What - 640w',
-            style: { width: '10em' }
-          }}
-          zoomImage={{
-            src: 'https://scontent-lga3-1.cdninstagram.com/vp/97f2a8da6097444d00795e86c92a7d71/5CAD97FB/t51.2885-15/fr/e15/s1080x1080/44575363_2485305361511095_4925126045707578033_n.jpg',
-            alt: 'Protector OF What - 1080w'
-          }}
-        />
+        { this.returnImages() }
       </div>
     );
   }
 }
 
-
-
-// Draw.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
+Draw.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 export default withStyles(styles)(Draw)
