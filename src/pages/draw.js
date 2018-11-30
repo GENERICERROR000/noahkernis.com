@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import ImageZoom from 'react-medium-image-zoom'
-
-// TODO
-// 1 - Create and import an Async component piece using Progress indicator
+// import ImageZoom from 'react-medium-image-zoom'
+import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({});
 
@@ -54,25 +52,14 @@ class Draw extends React.Component {
 
     return images.map((imageName, i) => {
       return (
-        <React.Fragment >
-          {i}
-          <ImageZoom
-            key={i}
-            image={{
-              src: baseURL + imageName,
-              alt: imageName,
-              style: { width: '10em' }
-            }}
-            zoomImage={{
-              src: baseURL + imageName,
-              alt: imageName,
-            }}
-          />
-        </React.Fragment>
+        <AsyncComponent
+          key={i}
+          baseURL={baseURL}
+          imageName={imageName}
+          index={i} />
       )
     })
   }
-
 
   render() {
     const { classes } = this.props
