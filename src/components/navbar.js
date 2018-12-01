@@ -16,8 +16,7 @@ const styles = theme => ({
     marginRight: theme.spacing.unit * 2.0,
     marginBottom: theme.spacing.unit * 2.0,
     '&:hover': {
-      color: '#ffffff',
-      backgroundColor: '#000000'
+      fontStyle: 'italic'
     }
   },
   selected: {
@@ -26,8 +25,7 @@ const styles = theme => ({
     marginRight: theme.spacing.unit * 2.0,
     marginBottom: theme.spacing.unit * 2.0,
     '&:hover': {
-      color: '#ffffff',
-      backgroundColor: '#000000'
+      fontStyle: 'italic'
     }
   }
 })
