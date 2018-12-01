@@ -71,6 +71,7 @@ class Draw extends React.Component {
 
   render() {
     const { classes } = this.props
+    
     return (
       <div className={classes.root}>
         <Typography variant="h6" className={classes.headers}>

@@ -34,7 +34,8 @@ class Paint extends React.Component {
           key={i}
           baseURL={baseURL}
           imageName={imageName}
-          index={i} />
+          index={i}
+        />
       )
     })
   }

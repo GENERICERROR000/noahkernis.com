@@ -5,7 +5,7 @@ import NoahKernis from './pages/noahKernis.js'
 import Code from './pages/code.js'
 import Draw from './pages/draw.js'
 import Paint from './pages/paint.js'
-import SuperSecretPage from './pages/superSecretPage.js'
+import ItpVideo from './pages/itpVideo.js'
 import Write from './pages/write.js'
 import GenericError from './pages/genericError.js'
 
@@ -19,7 +19,7 @@ export default () => {
       <Route path="/code" exact component={Code} props={childProps} />
       <Route path="/draw" exact component={Draw} props={childProps} />
       <Route path="/paint" exact component={Paint} props={childProps} />
-      <Route path="/super_secret_page" exact component={SuperSecretPage} props={childProps} />
+      <Route path="/itp-video" exact component={ItpVideo} props={childProps} />
       <Route path="/write" exact component={Write} props={childProps} />
       <Route path="/generic_error" exact component={GenericError} props={childProps} />
     </Switch>
