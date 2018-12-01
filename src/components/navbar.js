@@ -13,14 +13,24 @@ const styles = theme => ({
   a: {
     color: 'inherit',
     textDecoration: 'none',
+    marginRight: theme.spacing.unit * 2.0,
+    marginBottom: theme.spacing.unit * 2.0,
     '&:hover': {
       color: '#ffffff',
       backgroundColor: '#000000'
-    },
-    marginRight: theme.spacing.unit * 2.0,
-    marginBottom: theme.spacing.unit * 2.0
+    }
   },
-});
+  selected: {
+    color: 'inherit',
+    textDecoration: 'underline',
+    marginRight: theme.spacing.unit * 2.0,
+    marginBottom: theme.spacing.unit * 2.0,
+    '&:hover': {
+      color: '#ffffff',
+      backgroundColor: '#000000'
+    }
+  }
+})
 
 class NavBar extends React.Component {
   state = {
@@ -33,14 +43,22 @@ class NavBar extends React.Component {
     ]
   }
 
-  returnNavbar = () => {
+  returnNavbar = (path) => {
     const { pages } = this.state
     const { classes } = this.props
 
     return pages.map((pageName, i) => {
+      let pageNameL =  pageName.toLowerCase()
+      let selected = path === pageNameL
+
       return (
         <Grid key={i} item>
-          <Typography component="a" variant="h5" gutterBottom href={'/' + pageName.toLowerCase()} className={classes.a}>
+          <Typography
+            component="a"
+            variant="h5"
+            gutterBottom href={'/' + pageNameL}
+            className={selected ? classes.selected : classes.a}
+          >
             { pageName }
           </Typography>
         </Grid>
@@ -50,6 +68,8 @@ class NavBar extends React.Component {
 
   render() {
     const { classes } = this.props
+    const path = window.location.pathname.substr(1)
+    const isRoot = path === ''
 
     return (
       <Grid container className={classes.root}>
@@ -60,7 +80,7 @@ class NavBar extends React.Component {
             justify="flex-start"
             alignItems="flex-start"
           >
-            <Typography component="a" variant="h2" gutterBottom href="/" className={classes.a}>
+            <Typography component="a" variant="h2" gutterBottom href="/" className={isRoot ? classes.selected : classes.a}>
               Noah Kernis
             </Typography>
           </Grid>
@@ -70,7 +90,7 @@ class NavBar extends React.Component {
             justify="flex-start"
             alignItems="flex-start"
           >
-          { this.returnNavbar() }
+          { this.returnNavbar(path) }
           </Grid>
         </Grid>
       </Grid>
