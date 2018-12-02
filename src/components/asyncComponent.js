@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import ImageIcon from '@material-ui/icons/Image';
 import ImageZoom from 'react-medium-image-zoom'
 
-// export default function asyncComponent(baseURL, imageName, i) {
+const styles = theme => ({
+  text: {
+    lineHeight: 'inherit',
+    width: '10em'
+  }
+})
+
 class AsyncComponent extends Component {
   state = {
     loaded: false
@@ -10,7 +19,7 @@ class AsyncComponent extends Component {
 
   render() {
     const { loaded } = this.state
-    const { baseURL, imageName, index } = this.props
+    const { baseURL, imageName, index, classes } = this.props
 
     return (
       <React.Fragment>
@@ -30,9 +39,18 @@ class AsyncComponent extends Component {
             alt: imageName,
           }}
         />
+        <br />
+        <Typography variant="overline" className={classes.text}>
+          { imageName.replace(/_/g, ' ').replace(/2018.jpeg/g, '- 2018') }
+        </Typography>
       </React.Fragment>
     )
   }
 }
 
-export default AsyncComponent
+
+AsyncComponent.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(AsyncComponent)

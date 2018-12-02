@@ -16,16 +16,17 @@ const styles = theme => ({
     marginRight: theme.spacing.unit * 2.0,
     marginBottom: theme.spacing.unit * 2.0,
     '&:hover': {
-      fontStyle: 'italic'
+      textDecoration: 'underline'
     }
   },
   selected: {
     color: 'inherit',
-    textDecoration: 'underline',
+    textDecoration: 'none',
+    fontStyle: 'italic',
     marginRight: theme.spacing.unit * 2.0,
     marginBottom: theme.spacing.unit * 2.0,
     '&:hover': {
-      fontStyle: 'italic'
+      textDecoration: 'underline',
     }
   }
 })

@@ -19,9 +19,9 @@ class Paint extends React.Component {
   state = {
     baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/paint/',
     images: [
-      'portrait_2018.png',
-      'hecho_en_america_2018.png',
-      'fearing_what_comes_next_2018.png'
+      'portrait_2018',
+      'hecho_en_america_2018',
+      'fearing_what_comes_next_2018'
     ]
   }
 
@@ -33,7 +33,7 @@ class Paint extends React.Component {
         <AsyncComponent
           key={i}
           baseURL={baseURL}
-          imageName={imageName}
+          imageName={imageName + '.jpeg'}
           index={i}
         />
       )

@@ -17,7 +17,7 @@ const styles = theme => ({
 class Code extends React.Component {
   render() {
     const { classes } = this.props
-    console.log(this.props.match)
+
     return (
       <div className={classes.root}>
         <Typography variant="h6" className={classes.headers}>
