@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ReactTimeout from 'react-timeout'
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -9,9 +10,9 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit * 1.2
   },
   media: {
-    height: '600px',
-    [theme.breakpoints.down('md')]: {
-      width: '60vw',
+    height: '400px',
+    [theme.breakpoints.down('xs')]: {
+      width: '53vw',
       height: 'auto'
     }
   },
@@ -96,6 +97,7 @@ class NoahKernis extends React.Component {
           onMouseEnter={this.handleHover}
           onMouseLeave={this.handleHover}
         />
+        <Description />
         <div className={classes.preLoad} key={'herp'}>
           { this.preLoadImages() }
         </div>

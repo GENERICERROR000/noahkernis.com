@@ -7,8 +7,7 @@ import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
-    marginLeft: theme.spacing.unit * 1.2,
-    flexGrow: 1
+    marginLeft: theme.spacing.unit * 1.2
   },
   layout: {
     marginBottom: theme.spacing.unit * 1.2
