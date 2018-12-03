@@ -17,7 +17,7 @@ const styles = theme => ({
     fontWeight: 'bold',
     width: '100%',
     position: 'absolute',
-    top: '90%',
+    top: '80%',
     color: 'white',
     background: 'black',
     paddingTop: theme.spacing.unit,
