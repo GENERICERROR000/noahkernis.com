@@ -63,14 +63,12 @@ class Draw extends React.Component {
 
     return portraits.map((imageName, i) => {
       return (
-        <Grid key={i} item>
-          <AsyncComponent
-            key={i}
-            baseURL={baseURL}
-            imageName={imageName + '.jpeg'}
-            index={i}
-          />
-        </Grid>
+        <AsyncComponent
+          key={i}
+          baseURL={baseURL}
+          imageName={imageName + '.jpeg'}
+          index={i}
+        />
       )
     })
   }
