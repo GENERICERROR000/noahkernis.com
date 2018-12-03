@@ -60,7 +60,6 @@ class Draw extends React.Component {
 
   returnPortraits = () => {
     const { baseURL, portraits } = this.state
-    const { classes } = this.props
 
     return portraits.map((imageName, i) => {
       return (
@@ -78,7 +77,6 @@ class Draw extends React.Component {
 
   returnMisc = () => {
     const { baseURL, misc } = this.state
-    const { classes } = this.props
 
     return misc.map((imageName, i) => {
       return (

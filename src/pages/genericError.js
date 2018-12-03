@@ -8,9 +8,10 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit * 1.2
   },
   media: {
-    height: '400px',
-    [theme.breakpoints.down('md')]: {
-      width: '40vw',
+    height: '300px',
+    paddingLeft: -10,
+    [theme.breakpoints.down('xs')]: {
+      width: '90vw',
       height: 'auto'
     }
   }
@@ -22,7 +23,9 @@ class GenericError extends React.Component {
 
     return (
       <div className={classes.root}>
-        <h1>"GENERIC ERROR"</h1>
+      http://genericerror.me/ <br />
+      https://twitter.com/ParrotDontTweet <br />
+      https://www.instagram.com/generic_error/ <br />
         <img
           className={classes.media}
           src='https://s3.amazonaws.com/images.noahkernis.com/media/life_is_weird.gif'

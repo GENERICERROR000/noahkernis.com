@@ -6,11 +6,22 @@ import ImageIcon from '@material-ui/icons/Image';
 import ImageZoom from 'react-medium-image-zoom'
 
 const styles = theme => ({
+  container: {
+    position: 'relative'
+  },
   text: {
     lineHeight: 'inherit',
-    width: '15em'
-  }
+    width: '15em',
+    position: 'absolute',
+    top: '90%',
+    color: 'black',
+    backgroundImage: 'linear-gradient(white, rgba(255,0,0,0))'
+   }
 })
+
+// #################################################
+// TODO: ADD FUNCTION SO TITLE ONLY APPEARS ON HOVER
+// #################################################
 
 class AsyncComponent extends Component {
   state = {
@@ -22,7 +33,7 @@ class AsyncComponent extends Component {
     const { baseURL, imageName, index, classes } = this.props
 
     return (
-      <React.Fragment>
+      <div className={classes.container}>
         <ImageIcon style={loaded ? {display: 'none'} : {fontSize: '2vw'}}/>
         <ImageZoom style={loaded ? {} : {display: 'none'}}
           key={index}
@@ -40,7 +51,7 @@ class AsyncComponent extends Component {
         <Typography variant="overline" className={classes.text}>
           { imageName.replace(/_/g, ' ').replace(/2018.jpeg/g, '- 2018') }
         </Typography>
-      </React.Fragment>
+      </div>
     )
   }
 }

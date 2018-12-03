@@ -11,8 +11,8 @@ const styles = theme => ({
   },
   wrap: {
     position: 'relative',
-  	marginBottom: '56.25%',
-  	marginTop: '25px',
+  	paddingBottom: '56.25%',
+  	paddingTop: '25px',
   	height: 0,
   	overflow: 'hidden',
   },

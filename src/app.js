@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import AppRoutes from './routes.js'
 import NavBar from './components/navbar.js'
 
