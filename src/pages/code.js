@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import withRoot from '../withRoot';
@@ -15,7 +16,11 @@ const GitHub = (props: Object) => {
 
 const styles = theme => ({
   root: {
-    marginLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2,
+    flexGrow: 1
+  },
+  layout: {
+    marginBottom: theme.spacing.unit * 1.2
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
@@ -34,33 +39,43 @@ class Code extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Typography variant="h6" className={classes.headers}>
-          PARROT_DONT_TWEET
-          <a
-            href='https://github.com/nkernis/PARROT_DONT_TWEET'
-            target='#'
-            className={classes.icon}
-          >
-            <GitHub />
-          </a>
-        </Typography>
-        <Typography variant="body1" className={classes.headers}>
-          ...Desc of Project
-        </Typography>
-
-        <Typography variant="h6" className={classes.headers}>
-          Good_Notes
-          <a
-            href='https://github.com/nkernis/Good_Notes'
-            target='#'
-            className={classes.icon}
-          >
-            <GitHub />
-          </a>
-        </Typography>
-        <Typography variant="body1" className={classes.headers}>
-          ...Desc of Project
-        </Typography>
+        <Grid
+          container
+          direction="column"
+          justify="flex-start"
+          alignItems="flex-start"
+        >
+          <Grid key='1' item className={classes.layout}>
+            <Typography variant="h6" className={classes.headers}>
+              Good_Notes
+            </Typography>
+            <Typography variant="body1" className={classes.headers}>
+              ...Desc of Project
+            </Typography>
+            <a
+              href='https://github.com/nkernis/Good_Notes'
+              target='#'
+              className={classes.icon}
+            >
+              <GitHub />
+            </a>
+          </Grid>
+          <Grid key='2' item className={classes.layout}>
+            <Typography variant="h6" className={classes.headers}>
+              PARROT_DONT_TWEET
+            </Typography>
+            <Typography variant="body1" className={classes.headers}>
+              ...Desc of Project
+            </Typography>
+            <a
+              href='https://github.com/nkernis/PARROT_DONT_TWEET'
+              target='#'
+              className={classes.icon}
+            >
+              <GitHub />
+            </a>
+          </Grid>
+        </Grid>
       </div>
     );
   }
