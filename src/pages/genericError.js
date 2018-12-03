@@ -5,7 +5,7 @@ import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
-    paddingLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2
   },
   media: {
     height: '400px',

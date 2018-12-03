@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withRoot from '../withRoot';
 import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({
   root: {
-    paddingLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2,
+    flexGrow: 1
+  },
+  media: {
+    marginLeft: theme.spacing.unit * 1.2,
+    marginRight: theme.spacing.unit * 1.2
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
@@ -20,34 +26,45 @@ class Paint extends React.Component {
     baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/paint/',
     images: [
       'portrait_2018',
-      'hecho_en_america_2018',
-      'fearing_what_comes_next_2018'
+      'fearing_what_comes_next_2018',
+      'hecho_en_america_2018'
     ]
   }
 
   returnImages = () => {
     const { baseURL, images } = this.state
+    const { classes } = this.props
 
     return images.map((imageName, i) => {
       return (
-        <AsyncComponent
-          key={i}
-          baseURL={baseURL}
-          imageName={imageName + '.jpeg'}
-          index={i}
-        />
+        <Grid key={i} item className={classes.media}>
+          <AsyncComponent
+            key={i}
+            baseURL={baseURL}
+            imageName={imageName + '.jpeg'}
+            index={i}
+          />
+        </Grid>
       )
     })
   }
 
   render() {
     const { classes } = this.props
+
     return (
       <div className={classes.root}>
         <Typography variant="h6" className={classes.headers}>
           Paintings
         </Typography>
-        { this.returnImages() }
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="flex-start"
+        >
+          { this.returnImages() }
+        </Grid>
       </div>
     );
   }

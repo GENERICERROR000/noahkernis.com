@@ -8,7 +8,7 @@ import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({
   root: {
-    paddingLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2
   },
   gridRoot: {
     flexGrow: 1
@@ -101,7 +101,7 @@ class Draw extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Typography variant="h6" className={classes.headers}>
+        <Typography variant='h6' className={classes.headers}>
           Portraits
         </Typography>
         <Grid
@@ -109,12 +109,12 @@ class Draw extends React.Component {
           className={classes.gridRoot}
           spacing={16}
           alignItems='center'
-          justify="center"
+          justify='center'
         >
           { this.returnPortraits() }
         </Grid>
 
-        <Typography variant="h6" className={classes.headers}>
+        <Typography variant='h6' className={classes.headers}>
           Miscellaneous
         </Typography>
         <Grid
@@ -122,7 +122,7 @@ class Draw extends React.Component {
           className={classes.gridRoot}
           spacing={16}
           alignItems='center'
-          justify="flex-stretch"
+          justify='center'
         >
           { this.returnMisc() }
         </Grid>

@@ -15,7 +15,7 @@ const GitHub = (props: Object) => {
 
 const styles = theme => ({
   root: {
-    paddingLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
@@ -24,7 +24,7 @@ const styles = theme => ({
   icon: {
     color: '#000000',
     fontSize: '1.5em',
-    paddingLeft: theme.spacing.unit * 1.2
+    marginLeft: theme.spacing.unit * 1.2
   }
 })
 

@@ -6,13 +6,13 @@ import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
-    paddingLeft: theme.spacing.unit * 1.2,
-    paddingRight: theme.spacing.unit * 1.2,
+    marginLeft: theme.spacing.unit * 1.2,
+    marginRight: theme.spacing.unit * 1.2,
   },
   wrap: {
     position: 'relative',
-  	paddingBottom: '56.25%',
-  	paddingTop: '25px',
+  	marginBottom: '56.25%',
+  	marginTop: '25px',
   	height: 0,
   	overflow: 'hidden',
   },
