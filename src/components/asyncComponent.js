@@ -38,7 +38,7 @@ class AsyncComponent extends Component {
         <ImageZoom style={loaded ? {} : {display: 'none'}}
           key={index}
           image={{
-            src: baseURL + imageName,
+            src: baseURL + 'min/' + imageName,
             alt: imageName,
             style: { width: '15em' },
             onLoad: () => this.setState({loaded: true})

@@ -14,6 +14,12 @@ const styles = theme => ({
       width: '60vw',
       height: 'auto'
     }
+  },
+  preLoad: {
+    'width': 0,
+    'height': 0,
+    'visibility': 'hidden',
+    'overflow': 'hidden'
   }
 })
 
@@ -43,24 +49,13 @@ class NoahKernis extends React.Component {
   }
 
   componentDidMount = () => {
-    const { baseURL, images } = this.state
-
     this.props.setTimeout(this.interval, 5000)
-
-    images.forEach(name => {
-      const imgC = new Image()
-      const imgBW = new Image()
-
-      imgC.src = baseURL + name.c
-      imgBW.src = baseURL + name.bw
-    })
   }
 
   interval = () => {
     this.changePic()
     this.props.setInterval(this.changePic, 2500)
   }
-
 
   changePic = () => {
     const { index } = this.state
@@ -72,6 +67,21 @@ class NoahKernis extends React.Component {
     this.setState({c: !c})
   }
 
+  preLoadImages = () => {
+    const { baseURL, images } = this.state
+
+    return images.map((imageName, i) => {
+      const imgC = baseURL + imageName.c
+      const imgBW = baseURL + imageName.bw
+      return (
+        <React.Fragment key={i}>
+          <img key={imgC} src={imgC} alt='hidden' />
+          <img key={imgBW} src={imgBW} alt='hidden' />
+        </React.Fragment>
+      )
+    })
+  }
+
   render() {
     const { baseURL, index, images, c } = this.state
     const { classes } = this.props
@@ -79,7 +89,6 @@ class NoahKernis extends React.Component {
 
     return (
       <div className={classes.root}>
-
         <img
           src={src}
           alt='Noah Kernis'
@@ -87,6 +96,9 @@ class NoahKernis extends React.Component {
           onMouseEnter={this.handleHover}
           onMouseLeave={this.handleHover}
         />
+        <div className={classes.preLoad} key={'herp'}>
+          { this.preLoadImages() }
+        </div>
       </div>
     );
   }
