@@ -8,7 +8,7 @@ import ImageZoom from 'react-medium-image-zoom'
 const styles = theme => ({
   text: {
     lineHeight: 'inherit',
-    width: '10em'
+    width: '15em'
   }
 })
 
@@ -23,15 +23,13 @@ class AsyncComponent extends Component {
 
     return (
       <React.Fragment>
-        <ImageIcon
-          style={loaded ? {display: 'none'} : {fontSize: '2vw'}}
-        />
+        <ImageIcon style={loaded ? {display: 'none'} : {fontSize: '2vw'}}/>
         <ImageZoom style={loaded ? {} : {display: 'none'}}
           key={index}
           image={{
             src: baseURL + imageName,
             alt: imageName,
-            style: { width: '10em' },
+            style: { width: '15em' },
             onLoad: () => this.setState({loaded: true})
           }}
           zoomImage={{
@@ -39,7 +37,6 @@ class AsyncComponent extends Component {
             alt: imageName,
           }}
         />
-        <br />
         <Typography variant="overline" className={classes.text}>
           { imageName.replace(/_/g, ' ').replace(/2018.jpeg/g, '- 2018') }
         </Typography>
@@ -47,7 +44,6 @@ class AsyncComponent extends Component {
     )
   }
 }
-
 
 AsyncComponent.propTypes = {
   classes: PropTypes.object.isRequired,

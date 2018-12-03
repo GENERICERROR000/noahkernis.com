@@ -9,7 +9,8 @@ class GenericError extends React.Component {
 
     return (
       <div>
-        "GENERIC ERROR"
+        <h1>"GENERIC ERROR"</h1>
+        <img src='https://s3.amazonaws.com/images.noahkernis.com/media/life_is_weird.gif' alt='life_is_weird.gif' />
       </div>
     );
   }

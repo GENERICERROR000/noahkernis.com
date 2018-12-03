@@ -22,49 +22,67 @@ const styles = theme => ({
 class Draw extends React.Component {
   state = {
     baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/draw/',
-    images: [
+    portraits: [
       'a_person_2018',
-      'a_person_cant_ever_be_broken_2018',
-      'all_or_none_2018',
-      'another_day_2018',
-      'bleed_love_2018',
       'evil_2018',
-      'finally_got_that_itch_2018',
-      'forgetting_your_keys_2018',
-      'i_did_not_mean_to_say_that_2018',
-      'i_exist_2018',
-      'i_just_had_it_2018',
-      'i_like_your_chair_2018',
       'i_made_the_cape_too_big_2018',
-      'im_here_2018',
       'inside_out_2018',
       'its_hard_to_say_2018',
-      'keeping_it_cool_2018',
       'none_of_this_makes_sense_2018',
       'pair_is_a_story_2018',
-      'protector_of_what_2018',
-      'ready_2018',
-      'remember_2018',
-      'singular_power_will_kill_us_all_2018',
-      'still_counts_2018',
-      'still_got_it_2018',
-      'there_never_was_a_reality_2018',
       'this_wont_end_well_2018',
       'thought_and_emotion_2018',
-      'what_day_is_it_2018',
       'what_was_that_2018',
       'when_confidence_wanes_2018',
       'when_do_we_get_to_dance_2018',
       'where_can_I_2018',
+      'protector_of_what_2018',
+      'keeping_it_cool_2018',
+      'there_never_was_a_reality_2018',
+      'i_like_your_chair_2018',
+      'ready_2018',
+      'im_here_2018',
+      'i_just_had_it_2018',
+      'what_day_is_it_2018'
+    ],
+    misc: [
+      'still_counts_2018',
+      'bleed_love_2018',
+      'finally_got_that_itch_2018',
+      'i_exist_2018',
+      'still_got_it_2018',
+      'remember_2018',
+      'all_or_none_2018',
+      'another_day_2018',
+      'a_person_cant_ever_be_broken_2018',
+      'singular_power_will_kill_us_all_2018',
       'people_are_animals_2018'
     ]
   }
 
-  returnImages = () => {
-    const { baseURL, images } = this.state
+  returnPortraits = () => {
+    const { baseURL, portraits } = this.state
     const { classes } = this.props
 
-    return images.map((imageName, i) => {
+    return portraits.map((imageName, i) => {
+      return (
+        <Grid key={i} item>
+          <AsyncComponent
+            key={i}
+            baseURL={baseURL}
+            imageName={imageName + '.jpeg'}
+            index={i}
+          />
+        </Grid>
+      )
+    })
+  }
+
+  returnMisc = () => {
+    const { baseURL, misc } = this.state
+    const { classes } = this.props
+
+    return misc.map((imageName, i) => {
       return (
         <Grid key={i} item>
           <AsyncComponent
@@ -86,14 +104,28 @@ class Draw extends React.Component {
         <Typography variant="h6" className={classes.headers}>
           Portraits
         </Typography>
-        <Grid container className={classes.gridRoot} spacing={16}>
-
-            { this.returnImages() }
-
+        <Grid
+          container
+          className={classes.gridRoot}
+          spacing={16}
+          alignItems='center'
+          justify="center"
+        >
+          { this.returnPortraits() }
         </Grid>
+
         <Typography variant="h6" className={classes.headers}>
           Miscellaneous
         </Typography>
+        <Grid
+          container
+          className={classes.gridRoot}
+          spacing={16}
+          alignItems='center'
+          justify="flex-stretch"
+        >
+          { this.returnMisc() }
+        </Grid>
       </div>
     );
   }
