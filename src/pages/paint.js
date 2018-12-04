@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import withRoot from '../withRoot';
 import AsyncComponent from '../components/asyncComponent.js'
+import Description from '../components/description.js';
+import withRoot from '../withRoot';
 
 const styles = theme => ({
   root: {
@@ -54,6 +55,7 @@ class Paint extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Description />
         <Typography variant="h6" className={classes.headers}>
           Paintings
         </Typography>

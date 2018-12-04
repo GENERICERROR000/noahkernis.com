@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -23,6 +24,7 @@ class GenericError extends React.Component {
 
     return (
       <div className={classes.root}>
+      <Description />
       http://genericerror.me/ <br />
       https://twitter.com/ParrotDontTweet <br />
       https://www.instagram.com/generic_error/ <br />

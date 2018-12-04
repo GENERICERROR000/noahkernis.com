@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -25,26 +24,10 @@ class Write extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Grid
-          container
-          direction="column"
-          justify="flex-start"
-          alignItems="flex-start"
-        >
-          <Grid item className={classes.layout}>
-            <Typography variant="h6" className={classes.headers}>
-              Welcome To The Tour
-            </Typography>
-            <Typography variant="body1" className={classes.headers}>
-              Words... <br />
-              Words... <br />
-              Words... <br />
-              Words... <br />
-              Words... <br />
-            </Typography>
-          </Grid>
-
-        </Grid>
+        <Description
+          title='hello'
+          body='ok'
+        />
       </div>
     );
   }

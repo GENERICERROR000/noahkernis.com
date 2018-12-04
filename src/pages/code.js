@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const GitHub = (props: Object) => {
@@ -39,6 +40,7 @@ class Code extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Description />
         <Grid
           container
           direction="column"

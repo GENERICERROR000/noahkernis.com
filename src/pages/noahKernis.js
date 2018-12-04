@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ReactTimeout from 'react-timeout'
-import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -97,7 +96,6 @@ class NoahKernis extends React.Component {
           onMouseEnter={this.handleHover}
           onMouseLeave={this.handleHover}
         />
-        <Description />
         <div className={classes.preLoad} key={'herp'}>
           { this.preLoadImages() }
         </div>

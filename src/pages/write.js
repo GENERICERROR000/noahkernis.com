@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -13,7 +14,6 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 1.2
   },
   headers: {
-    marginTop: theme.spacing.unit * 1.2,
     marginBottom: theme.spacing.unit * 1.2
   }
 })
@@ -30,6 +30,7 @@ class Write extends React.Component {
           justify="flex-start"
           alignItems="flex-start"
         >
+          <Description />
           <Grid key='1' item className={classes.layout}>
             <Typography variant="h6" className={classes.headers}>
               Believing

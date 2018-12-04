@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withRoot from '../withRoot';
+import Description from '../components/description.js';
 import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({
@@ -95,6 +96,7 @@ class Draw extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Description />
         <Typography variant='h6' className={classes.headers}>
           Portraits
         </Typography>

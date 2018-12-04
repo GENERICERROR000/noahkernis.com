@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import YouTube from 'react-youtube';
+import Description from '../components/description.js';
 import withRoot from '../withRoot';
 
 const styles = theme => ({
@@ -33,6 +34,7 @@ class ItpVideo extends React.Component {
 
     return (
       <div className={classes.root}>
+        <Description />
         <div className={classes.wrap}>
           <YouTube className={classes.frame} videoId="zgUjYB3Zls4" />
         </div>
