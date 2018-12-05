@@ -14,7 +14,7 @@ const theme = createMuiTheme({
   },
   typography: {
     useNextVariants: true,
-    fontFamily: '"Helvetica Neue"',
+    fontFamily: 'Helvetica neue',
     fontSize: 16,
   },
 });

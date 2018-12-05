@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Description from '../components/description.js';
-import withRoot from '../withRoot';
 
 const GitHub = (props: Object) => {
   return (
@@ -16,10 +15,6 @@ const GitHub = (props: Object) => {
 }
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2,
-    flexGrow: 1
-  },
   layout: {
     marginBottom: theme.spacing.unit * 1.2
   },
@@ -39,7 +34,7 @@ class Code extends React.Component {
     const { classes } = this.props
 
     return (
-      <div className={classes.root}>
+      <React.Fragment>
         <Description />
         <Grid
           container
@@ -78,7 +73,7 @@ class Code extends React.Component {
             </a>
           </Grid>
         </Grid>
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -87,4 +82,4 @@ Code.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(Code))
+export default withStyles(styles)(Code)

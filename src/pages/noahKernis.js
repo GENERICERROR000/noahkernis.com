@@ -9,9 +9,9 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit * 1.2
   },
   media: {
-    height: '400px',
+    height: '600px',
     [theme.breakpoints.down('xs')]: {
-      width: '53vw',
+      width: '80vw',
       height: 'auto'
     }
   },

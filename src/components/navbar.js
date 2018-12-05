@@ -3,12 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import withRoot from '../withRoot';
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2,
-  },
   a: {
     color: 'inherit',
     textDecoration: 'none',
@@ -70,7 +66,7 @@ class NavBar extends React.Component {
     const isRoot = path === ''
 
     return (
-      <Grid container className={classes.root}>
+      <Grid container>
         <Grid item xs={12}>
           <Grid
             container
@@ -100,4 +96,4 @@ NavBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(NavBar));
+export default withStyles(styles)(NavBar)

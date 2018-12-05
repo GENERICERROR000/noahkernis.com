@@ -5,13 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import AsyncComponent from '../components/asyncComponent.js'
 import Description from '../components/description.js';
-import withRoot from '../withRoot';
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2,
-    flexGrow: 1
-  },
   media: {
     marginLeft: theme.spacing.unit * 1.2,
     marginRight: theme.spacing.unit * 1.2
@@ -54,7 +49,7 @@ class Paint extends React.Component {
     const { classes } = this.props
 
     return (
-      <div className={classes.root}>
+      <React.Fragment>
         <Description />
         <Typography variant="h6" className={classes.headers}>
           Paintings
@@ -67,7 +62,7 @@ class Paint extends React.Component {
         >
           { this.returnImages() }
         </Grid>
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -76,4 +71,4 @@ Paint.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(Paint))
+export default withStyles(styles)(Paint)

@@ -9,7 +9,6 @@ import ImageZoom from 'react-medium-image-zoom'
 const styles = theme => ({
   container: {
     position: 'relative',
-
   },
   text: {
     lineHeight: 'inherit',

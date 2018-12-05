@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import withRoot from '../withRoot';
 import Description from '../components/description.js';
 import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2,
-    flexGrow: 1
+  container:{
+    marginBottom: 40
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
@@ -95,7 +93,7 @@ class Draw extends React.Component {
     const { classes } = this.props
 
     return (
-      <div className={classes.root}>
+      <div className={classes.container}>
         <Description />
         <Typography variant='h6' className={classes.headers}>
           Portraits
@@ -129,4 +127,4 @@ Draw.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(Draw))
+export default withStyles(styles)(Draw)

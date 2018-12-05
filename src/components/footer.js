@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
 import Typography from '@material-ui/core/Typography';
-import withRoot from '../withRoot';
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2,
+  container: {
     position: 'absolute',
+    right: 0,
     bottom: 0,
-    height: 'auto'
+    left: 0
+  },
+  text: {
+    fontFamily: 'Helvetica'
   }
 })
 
@@ -22,13 +22,11 @@ class Footer extends React.Component {
     } = this.props
 
     return (
-
-        <BottomNavigation className={classes.root}>
-          < Typography variant="overline">
-            All The Rights - All Of Time - Noah Kernis
+        <div className={classes.container}>
+          < Typography variant="overline" className={classes.text}>
+            All The Rights - All Of Time - All To Noah Kernis
           </Typography>
-        </BottomNavigation>
-
+        </div>
     );
   }
 }
@@ -37,4 +35,4 @@ Footer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(Footer))
+export default withStyles(styles)(Footer)
