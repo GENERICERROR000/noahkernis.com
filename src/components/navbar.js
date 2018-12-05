@@ -50,7 +50,8 @@ class NavBar extends React.Component {
           <Typography
             component="a"
             variant="h5"
-            gutterBottom href={'/' + pageNameL}
+            gutterBottom
+            href={'/' + pageNameL}
             className={selected ? classes.selected : classes.a}
           >
             { pageName }

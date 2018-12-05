@@ -23,7 +23,7 @@ const styles = theme => ({
     whiteSpace: 'pre-wrap'
   },
   headers: {
-    marginBottom: theme.spacing.unit * 1.2
+    marginBottom: theme.spacing.unit * 2
   },
   icon: {
     color: '#000000',

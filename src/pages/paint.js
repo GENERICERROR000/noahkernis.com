@@ -16,7 +16,7 @@ const styles = theme => ({
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
-    marginBottom: theme.spacing.unit * 1.2
+    marginBottom: theme.spacing.unit * 2
   }
 })
 
