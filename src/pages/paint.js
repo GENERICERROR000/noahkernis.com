@@ -7,6 +7,9 @@ import AsyncComponent from '../components/asyncComponent.js'
 import Description from '../components/description.js';
 
 const styles = theme => ({
+  container: {
+    marginBottom: 100
+  },
   media: {
     marginLeft: theme.spacing.unit * 1.2,
     marginRight: theme.spacing.unit * 1.2
@@ -17,7 +20,7 @@ const styles = theme => ({
   }
 })
 
-const description = ``
+const description = `This is a selection of my paintings. They are painted with oil on canvas, and are some of my first experimentations with color. My previous paintings have been in the style of my illustrations, while these begin to play with other techniques.`
 
 class Paint extends React.Component {
   state = {
@@ -51,8 +54,8 @@ class Paint extends React.Component {
     const { classes } = this.props
 
     return (
-      <React.Fragment>
-        <Description />
+      <div className={classes.container}>
+        <Description body={description}/>
         <Typography variant="h6" className={classes.headers}>
           Paintings
         </Typography>
@@ -64,7 +67,7 @@ class Paint extends React.Component {
         >
           { this.returnImages() }
         </Grid>
-      </React.Fragment>
+      </div>
     );
   }
 }

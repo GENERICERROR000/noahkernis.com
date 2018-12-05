@@ -15,6 +15,9 @@ const GitHub = (props: Object) => {
 }
 
 const styles = theme => ({
+  container: {
+    marginBottom: 100
+  },
   layout: {
     marginBottom: theme.spacing.unit * 1.2,
     whiteSpace: 'pre-wrap'
@@ -29,22 +32,22 @@ const styles = theme => ({
   }
 })
 
-const description = `Good_Notes and PARROT_DONT_TWEET are two of my personal projects. They are ongoing and are update as needed. (I would share some of the full-stack development, automation, or architecture I have done for work, but unfortunately they are covered by NDA's).`
+const description = `Good_Notes and PARROT_DONT_TWEET are two of my personal projects. They are ongoing and are updated as needed. (I would share some of the full-stack development, automation, or architecture I have done for work, but unfortunately they are covered by NDA's).`
 
 const descriptionGN = `Good_Notes is a cli note-taking app written in Go. It is currently under development and I work on it with a former colleague. The app is a light-weight binary that can be easily dowloaded and run. It is for quick note taking or scrap notes while working at the cli. Running the app and passing it a string writes the input to the default note, which is broken up by timestamp. The app also allows creating other notes, and managing them. Notes can be edited with the users preferred cli text editor. The notes can be stored and retrieved from Amazon S3.`
 
-const descriptionPDT = `PARROT_DONT_TWEET is part research and part art project. It is a NodeJS app that uses Twitter's API and Amazon DynamoDB for storage. The app is containerized for ease of deployment and distribution. It is currently running on a Raspberry PI in my apartment.
+const descriptionPDT = `PARROT_DONT_TWEET is part research and part art project. It is a NodeJS app that uses Twitter's API and Amazon DynamoDB for storage. The app is containerized using Docker for ease of deployment and distribution. It is currently running on a Raspberry PI in my apartment.
 
-Research: The app listens to @RealDonalTrump (it can be used for any Twitter user), and stores all of the tweets in a database. It then posts the exact same copy under the handle @ParrotDontTweet (again, can be any user), and store that in a database. The aim is to see if Twitter treats the content differently, even though the text is copy-pasted.
+Research: The app listens to @RealDonaldTrump (but it can be used for any Twitter user), and stores all of the tweets in a database. It then posts the exact same copy under the handle @ParrotDontTweet (again, can be any user), and stores that in a database. The aim is to see if Twitter treats the content differently, even though the text is copy-pasted.
 
-Art Project: Twitter is a digital environment often compared to a public square. However, it is inundated with ads, bots, and companies that can often appear like regular user. PARROT_DONT_TWEET adds to the noise. Other Twitter users like it's content, although it is just "stolen". I often refer to it as the 'Hate Machine', as it can serve to parrot and amplify voice. In this way, the app mimics human interaction with Twitter.`
+Art Project: Twitter is a digital environment often compared to a public square. However, it is inundated with ads, bots, and companies that can often appear like regular user. PARROT_DONT_TWEET adds to the noise. Other Twitter users like its content, although it is just "stolen." I often refer to it as the 'Hate Machine,' as it can serve to parrot and amplify voices. In this way, the app mimics human interaction with Twitter.`
 
 class Code extends React.Component {
   render() {
     const { classes } = this.props
 
     return (
-      <React.Fragment>
+      <div className={classes.container}>
         <Description body={description}/>
         <Grid
           container
@@ -84,7 +87,7 @@ class Code extends React.Component {
             </Typography>
           </Grid>
         </Grid>
-      </React.Fragment>
+      </div>
     );
   }
 }

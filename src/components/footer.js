@@ -11,7 +11,8 @@ const styles = theme => ({
     left: 0
   },
   text: {
-    fontFamily: 'Helvetica'
+    fontFamily: 'Helvetica',
+    fontSize: '.7em'
   }
 })
 

@@ -18,7 +18,7 @@ const styles = theme => ({
 
 const description = `These are my illustrations. They were made with paper and marker or brush pen. I have released them under then name GENERIC ERROR.
 
-The portraits are drawn and then the words are added after. The text is my response the emotion I perceive in the person/creature I have drawn. The portraits mainly focus in the inner life their subjects, despite having no real access to this information. As humans, we do this daily with the people ww interact with.
+The portraits are drawn and then the words are added after. The text is my response to the emotion I perceive in the person/creature I have drawn. The portraits mainly focus on the inner life of their subjects, despite having no real access to this information. As humans, we do this daily with the people we interact with.
 
 The miscellaneous section contains selected illustrations.`
 

@@ -25,7 +25,7 @@ class Description extends React.Component {
             { title ? title : "Description" }
           </Typography>
           <Typography variant="body1" className={classes.headers}>
-            { body ? body : "Please add body content..." }
+            { body ? body : ''}
           </Typography>
         </div>
       </React.Fragment>

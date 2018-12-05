@@ -4,6 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import ReactTimeout from 'react-timeout'
 
 const styles = theme => ({
+  container: {
+    marginBottom: 100
+  },
   media: {
     height: '600px',
     [theme.breakpoints.down('xs')]: {
@@ -47,7 +50,7 @@ class NoahKernis extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.setTimeout(this.interval, 5000)
+    this.props.setTimeout(this.interval, 3500)
   }
 
   interval = () => {
@@ -86,7 +89,7 @@ class NoahKernis extends React.Component {
     const src = baseURL + (c === true ? images[index].c : images[index].bw)
 
     return (
-      <React.Fragment>
+      <div className={classes.container}>
         <img
           src={src}
           alt='Noah Kernis'
@@ -97,7 +100,7 @@ class NoahKernis extends React.Component {
         <div className={classes.preLoad} key={'herp'}>
           { this.preLoadImages() }
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

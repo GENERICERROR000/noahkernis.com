@@ -6,6 +6,9 @@ import Typography from '@material-ui/core/Typography';
 import Description from '../components/description.js';
 
 const styles = theme => ({
+  container: {
+    marginBottom: 100
+  },
   layout: {
     marginBottom: theme.spacing.unit * 1.2
   },
@@ -14,7 +17,7 @@ const styles = theme => ({
   }
 })
 
-const description = ``
+const description = `These are two poems selected from a chapbook I made. They were also produced under the GENERIC ERROR name.`
 
 class Write extends React.Component {
   render() {
@@ -26,8 +29,9 @@ class Write extends React.Component {
         direction="column"
         justify="flex-start"
         alignItems="flex-start"
+        className={classes.container}
       >
-        <Description />
+        <Description body={description}/>
         <Grid key='1' item className={classes.layout}>
           <Typography variant="h6" className={classes.headers}>
             Believing

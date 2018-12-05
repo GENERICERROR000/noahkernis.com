@@ -10,7 +10,7 @@ const styles = theme => ({
   	paddingBottom: '56.25%',
   	paddingTop: '25px',
   	height: 0,
-  	overflow: 'hidden',
+  	overflow: 'hidden'
   },
   frame: {
     position: 'absolute',
@@ -23,7 +23,8 @@ const styles = theme => ({
   }
 })
 
-const description = ``
+const title = `1 Minute Introductory Video`
+const link = `https://www.youtube.com/watch?v=zgUjYB3Zls4`
 
 class ItpVideo extends React.Component {
   render() {
@@ -31,8 +32,14 @@ class ItpVideo extends React.Component {
 
     return (
       <React.Fragment>
-        <Description />
-        <div className={classes.wrap}>
+        <Description title={title}/>
+        <a
+          href={link}
+          target='#'
+        >
+          { link }
+        </a>
+        <div className={classes.wrap} >
           <YouTube className={classes.frame} videoId="zgUjYB3Zls4" />
         </div>
       </React.Fragment>

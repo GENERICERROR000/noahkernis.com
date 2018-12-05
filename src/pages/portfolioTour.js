@@ -7,12 +7,12 @@ class Write extends React.Component {
   render() {
 
     return (
-      <React.Fragment>
+      <div style={{marginBottom: 100}}>
         <Description
           title='hello'
           body='ok'
         />
-      </React.Fragment>
+      </div>
     );
   }
 }
