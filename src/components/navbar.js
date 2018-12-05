@@ -29,6 +29,7 @@ const styles = theme => ({
 class NavBar extends React.Component {
   state = {
     pages: [
+      'Audio',
       'Code',
       'Draw',
       'Paint',
