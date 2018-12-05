@@ -1,6 +1,8 @@
 import React from 'react';
 import Description from '../components/description.js';
 
+const description = ``
+
 class Write extends React.Component {
   render() {
 

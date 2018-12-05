@@ -23,6 +23,8 @@ const styles = theme => ({
   }
 })
 
+const description = ``
+
 class ItpVideo extends React.Component {
   render() {
     const { classes } = this.props

@@ -12,6 +12,7 @@ const styles = theme => ({
     display: 'block',
     position: 'relative',
     marginLeft: theme.spacing.unit * 1.2,
+    marginRight: theme.spacing.unit * 1.2
   }
 })
 
@@ -30,4 +31,3 @@ class App extends React.Component {
 }
 
 export default withRoot(withStyles(styles)(App))
-// asfd

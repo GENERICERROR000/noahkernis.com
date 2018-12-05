@@ -14,6 +14,8 @@ const styles = theme => ({
   }
 })
 
+const description = ``
+
 class Write extends React.Component {
   render() {
     const { classes } = this.props

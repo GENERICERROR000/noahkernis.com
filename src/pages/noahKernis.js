@@ -2,12 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ReactTimeout from 'react-timeout'
-import withRoot from '../withRoot';
 
 const styles = theme => ({
-  root: {
-    marginLeft: theme.spacing.unit * 1.2
-  },
   media: {
     height: '600px',
     [theme.breakpoints.down('xs')]: {
@@ -22,6 +18,8 @@ const styles = theme => ({
     'overflow': 'hidden'
   }
 })
+
+const description = ``
 
 class NoahKernis extends React.Component {
   state = {
@@ -88,7 +86,7 @@ class NoahKernis extends React.Component {
     const src = baseURL + (c === true ? images[index].c : images[index].bw)
 
     return (
-      <div className={classes.root}>
+      <React.Fragment>
         <img
           src={src}
           alt='Noah Kernis'
@@ -99,7 +97,7 @@ class NoahKernis extends React.Component {
         <div className={classes.preLoad} key={'herp'}>
           { this.preLoadImages() }
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -108,4 +106,4 @@ NoahKernis.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withRoot(withStyles(styles)(ReactTimeout(NoahKernis)))
+export default withStyles(styles)(ReactTimeout(NoahKernis))

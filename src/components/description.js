@@ -5,11 +5,12 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   layout: {
-    marginBottom: theme.spacing.unit * 2.5
+    marginBottom: theme.spacing.unit * 2.5,
+    whiteSpace: 'pre-wrap'
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
-    marginBottom: theme.spacing.unit * 1.2
+    marginBottom: theme.spacing.unit * 3,
   }
 })
 

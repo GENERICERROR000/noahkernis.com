@@ -16,6 +16,8 @@ const styles = theme => ({
   }
 })
 
+const description = ``
+
 class Draw extends React.Component {
   state = {
     baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/draw/',
