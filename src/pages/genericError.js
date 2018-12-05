@@ -20,10 +20,10 @@ const styles = theme => ({
     }
   },
   media: {
-    height: '200px',
+    height: '250px',
     marginBottom: theme.spacing.unit * 1.2,
     [theme.breakpoints.down('xs')]: {
-      width: '40vw',
+      width: '50vw',
       height: 'auto'
     }
   }

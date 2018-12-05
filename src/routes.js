@@ -8,6 +8,7 @@ import Write from './pages/write.js'
 import GenericError from './pages/genericError.js'
 import PortfolioTour from './pages/portfolioTour.js'
 import ItpVideo from './pages/itpVideo.js'
+import FourZeroFour from './pages/404.js'
 
 export default () => {
   const childProps = {}
@@ -22,6 +23,7 @@ export default () => {
       <Route path="/generic_error" exact component={GenericError} props={childProps} />
       <Route path="/portfolio-tour" exact component={PortfolioTour} props={childProps} />
       <Route path="/itp-video" exact component={ItpVideo} props={childProps} />
+      <Route path="*" component={FourZeroFour} props={childProps} />
     </Switch>
   );
 };
