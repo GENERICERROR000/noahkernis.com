@@ -28,7 +28,7 @@ class FourZeroFour extends React.Component {
           alt='404.jepg'
         />
         <Typography variant="body1">
-          [ 404 -Please try a differnt page ]
+          [ 404 - Please try a differnt page ]
         </Typography>
       </div>
     );
