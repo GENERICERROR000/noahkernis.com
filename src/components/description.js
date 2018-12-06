@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import Parser from 'html-react-parser'
 
 const styles = theme => ({
   layout: {
@@ -10,7 +11,7 @@ const styles = theme => ({
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
-    marginBottom: theme.spacing.unit * 2,
+    marginBottom: theme.spacing.unit * 2
   }
 })
 
@@ -25,7 +26,7 @@ class Description extends React.Component {
             { title ? title : "Description" }
           </Typography>
           <Typography variant="body1" className={classes.headers}>
-            { body ? body : ''}
+            { Parser(body ? body : '') }
           </Typography>
         </div>
       </React.Fragment>

@@ -20,6 +20,9 @@ const styles = theme => ({
   	height: '100%',
     maxWidth: 560,
     maxHeight: 315
+  },
+  a: {
+    color: '#000000'
   }
 })
 
@@ -36,6 +39,7 @@ class ItpVideo extends React.Component {
         <a
           href={link}
           target='#'
+          className={classes.a}
         >
           { link }
         </a>
