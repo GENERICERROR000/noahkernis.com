@@ -49,12 +49,12 @@ class NoahKernis extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.setTimeout(this.interval, 3500)
+    this.props.setTimeout(this.interval, 2500)
   }
 
   interval = () => {
     this.changePic()
-    this.props.setInterval(this.changePic, 2500)
+    this.props.setInterval(this.changePic, 1500)
   }
 
   changePic = () => {
