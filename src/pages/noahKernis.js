@@ -25,7 +25,7 @@ const styles = theme => ({
 
 class NoahKernis extends React.Component {
   state = {
-    baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/media/',
+    baseURL: 'https://s3.amazonaws.com/media.noahkernis.com/images/',
     index: 0,
     c: true,
     images: [

@@ -24,7 +24,7 @@ class FourZeroFour extends React.Component {
       <div className={classes.container}>
         <img
           className={classes.media}
-          src='https://s3.amazonaws.com/images.noahkernis.com/media/404.jpeg'
+          src='https://s3.amazonaws.com/media.noahkernis.com/images/404.jpeg'
           alt='404.jepg'
         />
         <Typography variant="body1">

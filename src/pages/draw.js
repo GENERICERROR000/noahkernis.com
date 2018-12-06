@@ -24,7 +24,7 @@ The miscellaneous section contains selected illustrations.`
 
 class Draw extends React.Component {
   state = {
-    baseURL: 'https://s3.amazonaws.com/images.noahkernis.com/draw/',
+    baseURL: 'https://s3.amazonaws.com/media.noahkernis.com/draw/',
     portraits: [
       'a_person_2018',
       'evil_2018',

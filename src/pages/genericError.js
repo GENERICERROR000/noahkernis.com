@@ -14,13 +14,12 @@ const styles = theme => ({
   },
   a: {
     color: 'inherit',
-    textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline'
     }
   },
   media: {
-    height: '250px',
+    height: 250,
     marginBottom: theme.spacing.unit * 1.2,
     [theme.breakpoints.down('xs')]: {
       width: '50vw',
@@ -53,13 +52,13 @@ class GenericError extends React.Component {
         <Description body={description}/>
         <img
           className={classes.media}
-          src='https://s3.amazonaws.com/images.noahkernis.com/media/life_is_weird.gif'
+          src='https://s3.amazonaws.com/media.noahkernis.com/images/life_is_weird.gif'
           alt='life_is_weird.gif'
         />
         <Description title='Links'/>
         <Typography variant="subtitle2" className={classes.headers}>
           { links.map((link, i) =>
-              <React.Fragment>
+              <React.Fragment key={i}>
                 <a
                   key={i}
                   href={link}
