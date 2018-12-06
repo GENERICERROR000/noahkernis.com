@@ -4,7 +4,6 @@ import NoahKernis from './pages/noahKernis.js'
 import Audio from './pages/audio.js'
 import Code from './pages/code.js'
 import Draw from './pages/draw.js'
-import Paint from './pages/paint.js'
 import Write from './pages/write.js'
 import GenericError from './pages/genericError.js'
 import PortfolioTour from './pages/portfolioTour.js'
@@ -20,7 +19,6 @@ export default () => {
       <Route path="/audio" exact component={Audio} props={childProps} />
       <Route path="/code" exact component={Code} props={childProps} />
       <Route path="/draw" exact component={Draw} props={childProps} />
-      <Route path="/paint" exact component={Paint} props={childProps} />
       <Route path="/write" exact component={Write} props={childProps} />
       <Route path="/generic_error" exact component={GenericError} props={childProps} />
       <Route path="/portfolio-tour" exact component={PortfolioTour} props={childProps} />

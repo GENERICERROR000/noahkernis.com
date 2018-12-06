@@ -5,12 +5,13 @@ import ReactTimeout from 'react-timeout'
 
 const styles = theme => ({
   container: {
-    marginBottom: 100
+    marginBottom: 50
   },
   media: {
-    height: '600px',
+    width: 'auto',
+    height: '60vh',
     [theme.breakpoints.down('xs')]: {
-      width: '80vw',
+      width: '60vw',
       height: 'auto'
     }
   },

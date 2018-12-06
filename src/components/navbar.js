@@ -32,7 +32,6 @@ class NavBar extends React.Component {
       'Audio',
       'Code',
       'Draw',
-      'Paint',
       'Write',
       'Generic_Error'
     ]

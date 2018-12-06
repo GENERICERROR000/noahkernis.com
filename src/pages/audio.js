@@ -38,7 +38,7 @@ class ItpVideo extends React.Component {
           height="166"
         >
           <source
-            src="https://storycorpsorg-staging.s3.amazonaws.com/uploads/Elliott.mp3"
+            src="https://s3.amazonaws.com/images.noahkernis.com/in_my_mind_addiction.mp3"
             type="audio/mpeg"
           />
           Your browser does not support the audio tag.

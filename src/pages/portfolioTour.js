@@ -3,9 +3,8 @@ import Description from '../components/description.js';
 
 const description = `Hi and welcome to my portfolio and site!
 
-This is my personal website (the real landing page is https://noahkernis.com), which also functions as my portfolio. Each section contains selected works and a description of the content at the top.
+This is my personal website, which also functions as my portfolio. Each section contains selected works and a description of the content at the top.
 
-Please use the navigation menu at the top (Code, Draw, ...) to view the different sections.
 
 Thank you for taking the time to review my portfolio!
 
