@@ -30,9 +30,16 @@ class AsyncComponent extends Component {
     title: false
   }
 
-  handleHover = () => {
-    const { title } = this.state
-    this.setState({title: !title})
+  handleEnter = () => {
+    this.setState({title: true})
+  }
+
+  handleLeave = () => {
+    this.setState({title: false})
+  }
+
+  handleClick = () => {
+    this.setState({title: false})
   }
 
   render() {
@@ -42,8 +49,9 @@ class AsyncComponent extends Component {
     return (
       <Grid
         item
-        onMouseEnter={this.handleHover}
-        onMouseLeave={this.handleHover}
+        onMouseEnter={this.handleEnter}
+        onMouseLeave={this.handleLeave}
+        onClick={this.handleClick}
       >
         <div className={classes.container}>
           <ImageIcon style={loaded ? {display: 'none'} : {fontSize: '2vw'}}/>
