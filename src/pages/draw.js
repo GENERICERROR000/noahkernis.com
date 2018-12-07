@@ -8,7 +8,7 @@ import AsyncComponent from '../components/asyncComponent.js'
 
 const styles = theme => ({
   container:{
-    marginBottom: 40
+    marginBottom: 100
   },
   headers: {
     marginTop: theme.spacing.unit * 1.2,
