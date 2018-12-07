@@ -8,7 +8,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit * 1.2
   },
   container2: {
-    paddingBottom: theme.spacing.unit * 10
+    paddingBottom: theme.spacing.unit * 20
   },
   audio: {
     width: "600",
