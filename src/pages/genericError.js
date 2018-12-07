@@ -12,6 +12,9 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 1.2,
     marginBottom: theme.spacing.unit * 1.2
   },
+  headersLinks: {
+    marginBottom: theme.spacing.unit * 1.2
+  },
   a: {
     color: 'inherit',
     '&:hover': {
@@ -55,8 +58,10 @@ class GenericError extends React.Component {
           src='https://s3.amazonaws.com/media.noahkernis.com/images/life_is_weird.gif'
           alt='life_is_weird.gif'
         />
-        <Description title='Links'/>
-        <Typography variant="subtitle2" className={classes.headers}>
+        <Typography variant="h6" className={classes.headersLinks}>
+          Links
+        </Typography>
+        <Typography variant="subtitle2">
           { links.map((link, i) =>
               <React.Fragment key={i}>
                 <a
