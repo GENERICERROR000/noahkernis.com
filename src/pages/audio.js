@@ -16,12 +16,6 @@ const styles = theme => ({
   }
 })
 
-// MOM
-// "I grew up with radio" maybe needs more definition..."" we all great up with radio - it exists
-
-// JAS
-// Intro - vague but doesn’t say much about your work. I think use purpose drive narrative. What are you trying to achieve with your storytelling mediums and the topic of life with mental illness
-
 const description = `I believe audio is an intimate medium, with a unique ability to impact our emotions. I am interested in how it can be used to enhance the human experience and personal story telling.`
 
 const descriptionIMMA = `I recorded, edited, and produced this piece. When discussing mental health issues, the diseases often become the focus of conversation. I was interested in exploring the lived experience of a mental illness and help show what can often be an invisible and ongoing struggle.`
