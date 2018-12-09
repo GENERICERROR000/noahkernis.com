@@ -21,6 +21,7 @@ export default () => {
       <Route path="/draw" exact component={Draw} props={childProps} />
       <Route path="/write" exact component={Write} props={childProps} />
       <Route path="/generic_error" exact component={GenericError} props={childProps} />
+      <Route path="/portfolio_tour" exact component={PortfolioTour} props={childProps} />
       <Route path="/portfolio-tour" exact component={PortfolioTour} props={childProps} />
       <Route path="/itp-video" exact component={ItpVideo} props={childProps} />
       <Route path="*" component={FourZeroFour} props={childProps} />

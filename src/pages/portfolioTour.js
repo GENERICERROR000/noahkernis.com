@@ -9,7 +9,7 @@ Thank you for taking the time to review my portfolio!
 
 
 This page and my introductory video page cannot be found via the navigation menu.
-If you would like to visit this page again, please go to: <a href='https://noahkernis.com/portfolio-tour' target='#' style='color:#000000;'>https://noahkernis.com/portfolio-tour</a>.
+If you would like to visit this page again, please go to: <a href='https://noahkernis.com/portfolio_tour' target='#' style='color:#000000;'>https://noahkernis.com/portfolio_tour</a>.
 If you would like to view the video, please go to: <a href='https://noahkernis.com/itp-video' target='#' style='color:#000000;'>https://noahkernis.com/itp-video</a>.`
 
 class Write extends React.Component {
