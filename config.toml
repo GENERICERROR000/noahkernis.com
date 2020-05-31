@@ -1,19 +1,15 @@
+# baseurl = "https://example.com/"
 baseurl = "/"
+title = "noahkernis.com"
+theme = "hugo-theme-console"
 languageCode = "en-us"
-theme = "terminal"
-paginate = 5
 
-
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "Noah Kernis - The Blog"
+[params]
+  	# Cutting off the page title to two chars for mobile (console-demo -> co)
+  	titleCutting = true
     subtitle = "Blog is a weird word"
     keywords = "blog itp technology art learning noah kernis"
     copyright = "All The Rights - All Of Time - All To Noah Kernis"
-    menuMore = "Show more"
-    readMore = "Read post"
-    readOtherPosts = "Read other posts"
     taglines = [
       "Only at participating locations", 
       "No dice - roll again", 
@@ -32,51 +28,48 @@ paginate = 5
       "I'll get to it at some point"
     ]
 
-    [languages.en.params.logo]
-      logoText = "Noah Kernis - The Blog"
-      logoHomeLink = "/"
+	[[params.navlinks]]
+		name = "about/"
+		url = "about/"
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
+	[[params.navlinks]]
+		name = "projects/"
+		url = "projects/"
 
-      [[languages.en.menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags"
+	[[params.navlinks]]
+		name = "generic_error/"
+		url = "generic_error/"
 
-      [[languages.en.menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
+	[[params.navlinks]]
+		name = "contact/"
+		url = "contact/"
+
 
 [privacy]
-  [privacy.disqus]
-    disable = false
+	[privacy.disqus]
+		disable = false
 
-  [privacy.googleAnalytics]
-    disable = false
-    anonymizeIP = true
-    respectDoNotTrack = true
-    useSessionStorage = true
+	[privacy.googleAnalytics]
+		disable = false
+		anonymizeIP = true
+		respectDoNotTrack = true
+		useSessionStorage = true
 
-  [privacy.instagram]
-    disable = false
-    simple = true
-    disableInlineCSS = true
+	[privacy.instagram]
+		disable = false
+		simple = true
+		disableInlineCSS = true
 
-  [privacy.twitter]
-    disable = false
-    enableDNT = true
-    simple = true
-    disableInlineCSS = true
+	[privacy.twitter]
+		disable = false
+		enableDNT = true
+		simple = true
+		disableInlineCSS = true
 
-  [privacy.vimeo]
-    disable = false
-    simple = true
+	[privacy.vimeo]
+		disable = false
+		simple = true
 
-  [privacy.youtube]
-    disable = false
-    privacyEnhanced = true
+	[privacy.youtube]
+		disable = false
+		privacyEnhanced = true
