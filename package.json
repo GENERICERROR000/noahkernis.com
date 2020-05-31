@@ -1,6 +1,15 @@
 {
   "name": "noahkernis.com",
-  "version": "1.0.0",
-  "dependencies": {
-  }
+  "version": "2.0.0",
+  "description": "Personal portfolio site for Noah Kernis (that's me...). Built using hugo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkernis/noahkernis.com.git"
+  },
+  "author": "Noah Kernis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkernis/noahkernis.com/issues"
+  },
+  "homepage": "https://github.com/nkernis/noahkernis.com#readme"
 }
