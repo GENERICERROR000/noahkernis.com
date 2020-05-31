@@ -1,32 +1,18 @@
 +++
-date = "2016-11-05T21:05:33+05:30"
-title = "About"
+date = "2020-05-31T19:28:33-04:00"
+title = "GENERIC_ERROR"
 +++
 
-A minimal, responsive and light theme for Hugo inspired by Linux console. 
+GENERIC_ERROR is the name I create and produce some of my work under, and it has been ongoing since late 2016. It is an identity meant to be native to both digital and analog spaces. The primary way I distribute the illustrations is via Instagram (@generic_error) or Twitter (@GENERIC_ERROR).
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+GENERIC_ERROR intentionally plays with the overlap between the physical and the digital. I primarily illustrate on paper, and then scan with an app to fully process the work. They are meant to sit on white backgrounds so they appear hand-drawn on the screen.
 
-## Installation
+In 2017, I produced a collection of zines entitled 'I DON'T BELIEVE IN MAGIC 8 BALLS.' They were released via the site genericerror.me, which was developed to look like a page out of the zine. The collection can be downloaded as a PDF for printing or viewing on a digital device.
 
-```
-$ mkdir themes
-$ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
-```
-    
-See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
+## Links
 
-## Configuration
+http://genericerror.me (https will happen one day...)
 
-Set theme parameter in your config file:
+https://www.instagram.com/generic_error
 
-```
-theme = "hugo-theme-console"
-```
-
-## License
-
-Copyright © 2020 [Marcin Mierzejewski](https://mrmierzejewski.com/)
-
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
+https://twitter.com/GENERIC_ERROR
