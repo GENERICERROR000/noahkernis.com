@@ -6,27 +6,8 @@ languageCode = "en-us"
 
 [params]
   	# Cutting off the page title to two chars for mobile (console-demo -> co)
-  	titleCutting = true
-    subtitle = "Blog is a weird word"
-    keywords = "blog itp technology art learning noah kernis"
+  	titleCutting = false
     copyright = "All The Rights - All Of Time - All To Noah Kernis"
-    taglines = [
-      "Only at participating locations", 
-      "No dice - roll again", 
-      "I still can't beleive it's not butter",
-      "All employees must use the service entrance",
-      "Oh - I'm sorry - you just missed them",
-      "Freshness guaranteed",
-      "Terms of service - use it or don't",
-      "[ Insert joke here ]",
-      "The input goes nowhere ==> <input type='text'>",
-      "Clicking the button does nothing ==> <button class='nothing-button'>the button</button>",
-      "Pick a number - any number - for no reason ==> <input type='number'>",
-      "Turn the \"radio\" on ==> <input type='radio'>",
-      "I am a computer - beep bop boop",
-      "Commenting is prohibited - for everyone's sake",
-      "I'll get to it at some point"
-    ]
 
 	[[params.navlinks]]
 		name = "about/"
