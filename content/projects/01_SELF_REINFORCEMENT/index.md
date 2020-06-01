@@ -1,9 +1,18 @@
 +++
-image = "hel-poland-2.jpg"
-date = "2020-01-23"
-title = "Hel, Poland"
+image = "sr.JPG"
+date = "2019-12-11"
+title = "SELF REINFORCEMENT"
 type = "gallery"
 +++
 
-[Hel Peninsula](https://en.wikipedia.org/w/index.php?title=Hel_Peninsula&oldid=939640541) (Polish: Mierzeja Helska) is a 35-km-long sand bar peninsula in northern Poland separating the Bay of Puck from the open Baltic Sea. 
-The width of the peninsula varies from approximately 300 m near Jurata, through 100 m in the most narrow part to over 3 km at the tip. Since the peninsula was formed entirely of sand, it is frequently turned into an island by winter storms. Until the 17th century the peninsula was a chain of islands that formed a strip of land only during the summer.
+{{< youtube "11M3RLmayz8?start=524" >}}
+<br>
+
+__December, 2019. Interactive Telecommunications Program, New York University.__ 
+*Raspberry Pi, BodyPix.js, WebSockets, Node.js, Wood Box, Mono Panel Mount, Mono Patch Cable* 
+
+SELF REINFORCEMENT explores the relationship between HUMANS, COMPUTERS, and how they “see” and interact with each other.
+
+The piece allows for a HUMAN to work with a COMPUTER to create a HUMAN-like form using the video feed from multiple cameras observing the gallery crowd. The video feed is processed in real time by the BodyPix Tenserflow.js library to isolate body parts.
+
+A HUMAN, via a control box, can assign the feed from any of the video feeds, to a body part. The result is a body-collage that may have many heads, torsos, and so on. The HUMAN and COMPUTER work together to create a representation of a person. Both the strengths and biases of each are combined to create the final representation.

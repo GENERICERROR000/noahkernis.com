@@ -1,9 +1,23 @@
 +++
-image = "00_ELASTIC_HEART.jpg"
-date = "2020-02-06"
-title = "Hel, Poland"
+image = "heart.JPG"
+date = "2019-11-19"
+title = "ELASTIC HEART"
 type = "gallery"
 +++
 
-[Hel Peninsula](https://en.wikipedia.org/w/index.php?title=Hel_Peninsula&oldid=939640541) (Polish: Mierzeja Helska) is a 35-km-long sand bar peninsula in northern Poland separating the Bay of Puck from the open Baltic Sea. 
-The width of the peninsula varies from approximately 300 m near Jurata, through 100 m in the most narrow part to over 3 km at the tip. Since the peninsula was formed entirely of sand, it is frequently turned into an island by winter storms. Until the 17th century the peninsula was a chain of islands that formed a strip of land only during the summer.
+{{< youtube "8uSPzMvA-k8&feature" >}}
+<br>
+
+__December, 2019. Interactive Telecommunications Program, New York University.__  
+*Silicone, servo motor, Arduino, LCD, ice packs, LED strip, styrofoam.*
+
+
+Collaboration with [Pippa Kelmenson](https://www.pippakelmenson.com/elastic-heart).
+
+Elastic Heart looks at the relationship between humans, their organs, and what it means to transplant an organ.
+
+The transplant process requires a donor, a recipient, and a third party to transport the organ. The person transporting the organ gains another organ for the duration of the trip.
+
+When a person places their hand on the sides of the piece, they touch a pulse sensor. In response, the heart starts to “beat” at the person’s BPM. A screen also displays the pulse over time.
+
+By holding the box, the person becomes the organ transport. The pulse reflects the persons, revealing it is now part of them.
