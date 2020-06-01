@@ -1,8 +1,24 @@
 +++
-image = "chicago-us.jpg"
-date = "2020-01-21"
-title = "Chicago, US"
+image = "midi_can.jpg"
+date = "2020-05-05"
+title = "MIDI_CAN"
 type = "gallery"
 +++
 
-[Chicago](https://en.wikipedia.org/w/index.php?title=Chicago&oldid=953376675), officially the City of Chicago, is the most populous city in the U.S. state of Illinois, and the third-most-populous city in the United States. With an estimated population of 2,705,994 (2018), it is also the most populous city in the Midwestern United States. Chicago is the county seat of Cook County, the second-most-populous county in the US, with a small portion of the northwest side of the city extending into DuPage County near O'Hare Airport. Chicago is the principal city of the Chicago metropolitan area, often referred to as Chicagoland. At nearly 10 million people, the metropolitan area is the third most populous in the United States. 
+{{< youtube "jAsN2_VZbYM" >}}
+<br>
+
+__May, 2020. Interactive Telecommunications Program, New York University.__  
+*Metal can, Arduino, copper, rotary encoder, Node.js, MIDI*
+
+Collaboration with [Jake Sherwood](https://jakesherwood.com/blog/tangibleinteractions/midi_can).
+
+
+*MIDI_CAN* is a networked, multi-mode, instrument/MIDI controller. It can be played by itself or collaboratively over the internet.
+
+The device sends MIDI signals to your DAW of choice. A locally hosted Node server also broadcasts and listens for incoming MIDI commands over the internet, via UDP. Network configuration can be done on a website, hosted on the local server.
+
+Customizable modes and channel setup allow us to tailor to the device to our own preferences. Modes include: explore, channel select, chords, scales, sample glitching/volume adjustment, and broadcasting.
+
+Four dedicated capacitive buttons can be combined with 4 capacitive slide inputs to create unique and interesting sounds.
+
