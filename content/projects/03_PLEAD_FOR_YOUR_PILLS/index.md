@@ -5,10 +5,8 @@ title = "PLEAD_FOR_YOUR_PILLS"
 type = "gallery"
 +++
 
-<!-- {{< youtube "11M3RLmayz8?start=524" >}}
-<br> -->
-
-TODO: ADD VIDEO
+{{< youtube "W5JabtWUj58" >}}
+<br>
 
 __February, 2020. Interactive Telecommunications Program, New York University.__ 
 *Raspberry Pi, Node.js, Snowboy Hotword Detection, Wood Box, LED, Microphone, Pill Box* 
