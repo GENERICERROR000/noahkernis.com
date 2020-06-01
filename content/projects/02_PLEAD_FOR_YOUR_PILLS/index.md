@@ -8,7 +8,7 @@ type = "gallery"
 <!-- {{< youtube "11M3RLmayz8?start=524" >}}
 <br> -->
 
-<h2>ADD VIDEO</h2>
+TODO: ADD VIDEO
 
 __February, 2020. Interactive Telecommunications Program, New York University.__ 
 *Raspberry Pi, Node.js, Snowboy Hotword Detection, Wood Box, LED, Microphone, Pill Box* 

@@ -9,7 +9,7 @@ type = "gallery"
 <br>
 
 __December, 2019. Interactive Telecommunications Program, New York University.__  
-*Silicone, servo motor, Arduino, LCD, ice packs, LED strip, styrofoam.*
+*Silicone, servo motor, Arduino, OLED, ice packs, LED strip, styrofoam.*
 
 Collaboration with [Pippa Kelmenson](https://www.pippakelmenson.com/elastic-heart).
 
