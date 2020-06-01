@@ -5,10 +5,8 @@ title = "INSULIN_PUMP"
 type = "gallery"
 +++
 
-<!-- {{< youtube "8uSPzMvA-k8&feature" >}}
-<br> -->
-
-TODO: ADD VIDEO
+{{< youtube "spEfkYzBjC4" >}}
+<br>
 
 __December, 2019. Interactive Telecommunications Program, New York University.__  
 *Silicone, servo motor, Arduino, OLED, ice packs, LED strip, styrofoam.*
