@@ -9,6 +9,8 @@ GENERIC_ERROR intentionally plays with the overlap between the physical and the 
 
 In 2017, I produced a collection of zines entitled 'I DON'T BELIEVE IN MAGIC 8 BALLS.' They were released via the site genericerror.me, which was developed to look like a page out of the zine. The collection can be downloaded as a PDF for printing or viewing on a digital device.
 
+{{< image src="life_is_weird.gif" alt="Character waving hand. Thought bubble reads, 'life is weird', then character says, 'compared to what!'" >}} 
+
 ## Links
 
 http://genericerror.me (https will happen one day...)
