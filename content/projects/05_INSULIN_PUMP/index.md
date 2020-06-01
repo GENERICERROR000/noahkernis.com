@@ -8,8 +8,8 @@ type = "gallery"
 {{< youtube "spEfkYzBjC4" >}}
 <br>
 
-__December, 2019. Interactive Telecommunications Program, New York University.__  
-*Silicone, servo motor, Arduino, OLED, ice packs, LED strip, styrofoam.*
+__May, 2020. Interactive Telecommunications Program, New York University.__  
+*Cardboard, Arduino, LED display, diabetes paraphernalia*
 
 *INSULIN_PUMP* is a large insulin pump where insulin is delivered when a person ‘pumps’ the device like water pump. 
 
