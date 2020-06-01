@@ -1,32 +1,13 @@
 +++
 date = "2016-11-05T21:05:33+05:30"
-title = "About"
+title = "The part where I say things about myself"
 +++
 
-A minimal, responsive and light theme for Hugo inspired by Linux console. 
+I am an interdisciplinary artist and software engineer with a background in neuroscience, experience working in TV, Podcasting, and as a DevOps engineer. 
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+I am currently enrolled in the ITP program at NYU. You can see my work on my [blog](https://blog.noahkernis.com/).
 
-## Installation
+<!-- 
+After studying neuroscience at Skidmore College, I went from working in TV and Podcasting to being a DevOps Engineer. After wrestling with the ethics and impact of the companies I had done work with, I began to look for non-commercial modes of exploring technology as more than a corporate tool (and weapon). That led me to the ITP program at NYU.
 
-```
-$ mkdir themes
-$ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
-```
-    
-See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
-
-## Configuration
-
-Set theme parameter in your config file:
-
-```
-theme = "hugo-theme-console"
-```
-
-## License
-
-Copyright © 2020 [Marcin Mierzejewski](https://mrmierzejewski.com/)
-
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
+My work has focused on surveillance capitalism (privacy, internet rights), the American healthcare system (primarily relating to Type 1 Diabetes, because I am one), and computer systems (networking, and projects involving distributed elements). My work takes the form of software based projects and/or physical computing and physical fabrication. -->

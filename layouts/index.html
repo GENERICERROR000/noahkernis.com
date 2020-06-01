@@ -1,52 +1,15 @@
 {{ define "main" }}
 
-<p><b>Hiya.</b></p>
+<h1>Hi.</h1>
+
+<br/>
 
 <p>This is "my" website.</p>
 
 <p>Have a touch, taste, and smell around.</p>
 	
-<p>What? Those can't be done in the browser? But I thought tech was made for humans? Guess it was made for some other being that loves looking at 2D images and touching flat, smooth surfaces.</p>
+<p>What? Those can't be done in the browser? But I thought all this tech was made for humans? Guess it was made for some other beings who loves looking at 2D images and touching flat, smooth surfaces.</p>
 
 <p>Oh well... Enjoy this while the internets lasts!</p>
-
-<!-- <h1>About</h1>
-
-<p>
-Console is a minimal, responsive and light theme for Hugo inspired by Linux console.  <a href="about/">(more)</a>
-</p>
-<br/>
-
-<h1>Latest posts</h1>
-
-<h1>Latest posts</h1>
-
-<div class="posts-list">
-{{ with .Site.GetPage "/posts" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-        <div class="post">
-            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>   
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-            {{ .Summary }}
-        </div>   
-    {{ end }}
-{{ end }}
-</div>
-
-<h1>Latest photos</h1>
-
-<div class="image-grid">
-{{ with .Site.GetPage "/photos" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
-        <a href="{{ .Permalink }}" title="{{ .Title }}">
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
-        {{ with $image }}
-            {{ $thumb := .Resize "400x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-        {{end}}
-        </a>
-    {{ end }}
-{{ end }}
-</div> -->
 
 {{ end }}
