@@ -11,7 +11,7 @@ type = "gallery"
 __December, 2019. Interactive Telecommunications Program, New York University.__ 
 *Raspberry Pi, BodyPix.js, WebSockets, Node.js, Wood Box, Mono Panel Mount, Mono Patch Cable* 
 
-SELF REINFORCEMENT explores the relationship between HUMANS, COMPUTERS, and how they “see” and interact with each other.
+*SELF REINFORCEMENT* explores the relationship between HUMANS, COMPUTERS, and how they “see” and interact with each other.
 
 The piece allows for a HUMAN to work with a COMPUTER to create a HUMAN-like form using the video feed from multiple cameras observing the gallery crowd. The video feed is processed in real time by the BodyPix Tenserflow.js library to isolate body parts.
 

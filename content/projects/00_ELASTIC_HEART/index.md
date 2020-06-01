@@ -11,10 +11,10 @@ type = "gallery"
 __December, 2019. Interactive Telecommunications Program, New York University.__  
 *Silicone, servo motor, Arduino, LCD, ice packs, LED strip, styrofoam.*
 
-
 Collaboration with [Pippa Kelmenson](https://www.pippakelmenson.com/elastic-heart).
 
-Elastic Heart looks at the relationship between humans, their organs, and what it means to transplant an organ.
+
+*ELASTIC HEART* looks at the relationship between humans, their organs, and what it means to transplant an organ.
 
 The transplant process requires a donor, a recipient, and a third party to transport the organ. The person transporting the organ gains another organ for the duration of the trip.
 
