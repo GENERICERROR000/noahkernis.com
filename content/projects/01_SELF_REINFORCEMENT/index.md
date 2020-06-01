@@ -8,7 +8,7 @@ type = "gallery"
 {{< youtube "11M3RLmayz8?start=524" >}}
 <br>
 
-__December, 2019. Interactive Telecommunications Program, New York University.__ 
+__December, 2019. Interactive Telecommunications Program, New York University.__  
 *Raspberry Pi, BodyPix.js, WebSockets, Node.js, Wood Box, Mono Panel Mount, Mono Patch Cable* 
 
 *SELF_REINFORCEMENT* explores the relationship between HUMANS, COMPUTERS, and how they “see” and interact with each other.
