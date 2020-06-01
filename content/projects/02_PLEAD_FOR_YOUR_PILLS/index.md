@@ -1,7 +1,7 @@
 +++
 image = "pfyp.JPG"
 date = "2020-02-03"
-title = "PLEAD FOR YOUR PILLS"
+title = "PLEAD_FOR_YOUR_PILLS"
 type = "gallery"
 +++
 
@@ -15,7 +15,7 @@ __February, 2020. Interactive Telecommunications Program, New York University.__
 
 Collaboration with [Benjamin Moll](https://wp.nyu.edu/benjaminmoll/plead-for-pills-with-noah-kernis/).
 
-*PLEAD FOR YOU PILLS* is critical of the American health care system and the power health insurance providers have over people. 
+*PLEAD_FOR_YOUR_PILLS* is critical of the American health care system and the power health insurance providers have over people. 
 
 With or without health insurance in the United States, people who need medicines or health services have to deal with arbitrary democracy in order to receive care. I myself am I Type 1 Diabetic, and experience this frequently when dealing with insurance to get medicines covered. 
 

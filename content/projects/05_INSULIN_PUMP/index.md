@@ -1,10 +1,22 @@
 +++
-image = "arizona-us.jpg"
-date = "2020-01-21"
-title = "Arizona, US"
+image = "ip.jpg"
+date = "2020-05-04"
+title = "INSULIN_PUMP"
 type = "gallery"
 +++
 
-The [Grand Canyon](https://en.wikipedia.org/w/index.php?title=Grand_Canyon&oldid=952699432) 
-is a steep-sided canyon carved by the Colorado River in Arizona, United States. 
-The canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters).
+<!-- {{< youtube "8uSPzMvA-k8&feature" >}}
+<br> -->
+
+TODO: ADD VIDEO
+
+__December, 2019. Interactive Telecommunications Program, New York University.__  
+*Silicone, servo motor, Arduino, OLED, ice packs, LED strip, styrofoam.*
+
+*INSULIN_PUMP* is a large insulin pump where insulin is delivered when a person ‘pumps’ the device like water pump. 
+
+The person must first calculate how much insulin they need. Then, pump the lever for the desired amount. The number of of pumps is displayed.
+
+Type 1 Diabetes (T1D) requires continuous work to manage the disease. That work often goes unseen because while treatments have gotten better, the devices involved are sleeker and less conspicuous.
+
+This piece is critical of the ways people with T1D are forced to adapt their lives to the demands of daily life. It amplifies the hidden work and and forces people to be aware of what T1D have to many times a day in order live. 
