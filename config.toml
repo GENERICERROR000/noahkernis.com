@@ -1,5 +1,4 @@
-# baseurl = "https://example.com/"
-baseurl = "/"
+# baseurl = "https://noahkernis.com.com/"
 title = "noahkernis.com"
 theme = "hugo-theme-console"
 languageCode = "en-us"
