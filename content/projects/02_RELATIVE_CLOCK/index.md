@@ -9,7 +9,7 @@ type = "gallery"
 <br>
 
 __February, 2020. Interactive Telecommunications Program, New York University.__  
-*Acrylic, Arduino, OLED, push-buttons*
+*Acrylic, Arduino, OLED, push-buttons.*
 
 *RELATIVE_CLOCK* is a desk clock meant to be a reminder of someone we care about. The clock displays the current time, but when it is invert, the time changes.
 

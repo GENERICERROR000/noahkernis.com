@@ -9,7 +9,7 @@ type = "gallery"
 <br>
 
 __May, 2020. Interactive Telecommunications Program, New York University.__  
-*Cardboard, Arduino, LED display, diabetes paraphernalia*
+*Cardboard, Arduino, LED display, diabetes paraphernalia*.
 
 *INSULIN_PUMP* is a large insulin pump where insulin is delivered when a person ‘pumps’ the device like water pump. 
 

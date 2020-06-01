@@ -9,7 +9,7 @@ type = "gallery"
 <br>
 
 __February, 2020. Interactive Telecommunications Program, New York University.__  
-*Raspberry Pi, Node.js, Snowboy Hotword Detection, Wood Box, LED, Microphone, Pill Box* 
+*Raspberry Pi, Node.js, Snowboy Hotword Detection, Wood Box, LED, Microphone, Pill Box.* 
 
 Collaboration with [Benjamin Moll](https://wp.nyu.edu/benjaminmoll/plead-for-pills-with-noah-kernis/).
 

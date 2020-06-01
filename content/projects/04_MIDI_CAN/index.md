@@ -9,7 +9,7 @@ type = "gallery"
 <br>
 
 __May, 2020. Interactive Telecommunications Program, New York University.__  
-*Metal can, Arduino, copper, rotary encoder, Node.js, MIDI*
+*Metal can, Arduino, copper, rotary encoder, Node.js, MIDI.*
 
 Collaboration with [Jake Sherwood](https://jakesherwood.com/blog/tangibleinteractions/midi_can).
 
