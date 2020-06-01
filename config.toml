@@ -1,4 +1,4 @@
-baseurl = "https://noahkernis.com.com/"
+baseurl = "https://noahkernis.com/"
 title = "noahkernis.com"
 theme = "hugo-theme-console"
 languageCode = "en-us"
