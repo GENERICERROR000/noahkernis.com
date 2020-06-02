@@ -5,7 +5,7 @@ title = "ELASTIC_HEART"
 type = "gallery"
 +++
 
-{{< youtube "8uSPzMvA-k8&feature" >}}
+{{< youtube "8uSPzMvA-k8" >}}
 <br>
 
 __December, 2019. Interactive Telecommunications Program, New York University.__  
